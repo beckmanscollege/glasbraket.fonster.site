@@ -1,21 +1,472 @@
-﻿<!doctype html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<title>test</title>
+  <head>
+    <title>GLASBRÅKET</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/ABCArizonaFlare-Regular-Trial.woff" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    <button
+      style="
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        height: 60px;
+        width: 70%;
+        color: white;
+        background: black;
+        font-size: 80px;
+        font-family: 'Arizona', serif;
+        line-height: 0;
+        border: none;
+        padding: 0px 20px 10px;
+      "
+      onclick="start(this)"
+    >
+      →
+    </button>
 
-<style>
+    <section id="p1">
+      <button class="btn">Starta guiden</button>
+      <video
+        poster="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/Disclaimer.jpg"
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p1.mp4"
+        playsinline
+      ></video>
+    </section>
 
+    <section id="p2">
+      <button class="btn">Gå vidare</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p2a.mp4"
+        playsinline
+      ></video>
+    </section>
 
-</style>
+    <section id="p3">
+      <button class="btn">Följ efter!</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p3a.mp4"
+        playsinline
+      ></video>
+    </section>
 
+    <section id="p4">
+      <button class="btn">Aaron Isaac</button>
+      <video
+        src="https://cdn.glitch.me/5ee16365-7219-49e8-b1be-f6e0b57fde97/p4.mp4"
+        playsinline
+      ></video>
+    </section>
 
-</head>
+    <section id="p5">
+      <button class="btn">Jag är klar</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p5a.mp4"
+        playsinline
+      ></video>
+    </section>
 
+    <section id="p6">
+      <button class="btn">Fönstret</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p6c.mp4"
+        playsinline
+      ></video>
+    </section>
 
-<body>
+    <section id="p7">
+      <button class="btn">Följ efter</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p7a.mp4"
+        playsinline
+      ></video>
+    </section>
 
-hej
+    <section id="p8">
+      <button class="btn">David Hirsch</button>
+      <video
+        src="https://cdn.glitch.me/5ee16365-7219-49e8-b1be-f6e0b57fde97/p8.mp4"
+        playsinline
+      ></video>
+    </section>
 
-</body>
+    <section id="p9">
+      <button class="btn">Följ efter</button>
+      <video
+        src="https://cdn.glitch.me/5ee16365-7219-49e8-b1be-f6e0b57fde97/p9a.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p10">
+      <button class="btn">Sätt dig ner</button>
+      <video
+        src="https://cdn.glitch.me/5ee16365-7219-49e8-b1be-f6e0b57fde97/p10.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p11">
+      <button class="btn btn2">→</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p11a.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p12">
+      <button class="btn btn2">→</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p12b.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p13">
+      <button class="btn btn2">→</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p13a.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p14">
+      <button class="btn btn2">→</button>
+      <video
+        src="https://cdn.glitch.me/5ee16365-7219-49e8-b1be-f6e0b57fde97/p14b.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p15">
+      <button class="btn btn2">→</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p15b.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p16">
+      <button class="btn">Följ efter!</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p16b.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p17">
+      <button class="btn">Toraskölden</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p17c.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p18">
+      <button class="btn btn2">→</button>
+      <video
+        src="https://cdn.glitch.me/5ee16365-7219-49e8-b1be-f6e0b57fde97/p18b.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p19">
+      <button class="btn btn2">→</button>
+      <video
+        src="https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/p19a.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section id="p20">
+      <button class="btn">Börja om</button>
+      <video
+        src="https://cdn.glitch.me/5ee16365-7219-49e8-b1be-f6e0b57fde97/p20c.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <script>
+      const p1 = document.querySelector("#p1");
+      const p2 = document.querySelector("#p2");
+      const p3 = document.querySelector("#p3");
+      const p4 = document.querySelector("#p4");
+      const p5 = document.querySelector("#p5");
+      const p6 = document.querySelector("#p6");
+      const p7 = document.querySelector("#p7");
+      const p8 = document.querySelector("#p8");
+      const p9 = document.querySelector("#p9");
+      const p10 = document.querySelector("#p10");
+      const p11 = document.querySelector("#p11");
+      const p12 = document.querySelector("#p12");
+      const p13 = document.querySelector("#p13");
+      const p14 = document.querySelector("#p14");
+      const p15 = document.querySelector("#p15");
+      const p16 = document.querySelector("#p16");
+      const p17 = document.querySelector("#p17");
+      const p18 = document.querySelector("#p18");
+      const p19 = document.querySelector("#p19");
+      const p20 = document.querySelector("#p20");
+
+      const p1vid = p1.querySelector("video");
+      const p2vid = p2.querySelector("video");
+      const p3vid = p3.querySelector("video");
+      const p4vid = p4.querySelector("video");
+      const p5vid = p5.querySelector("video");
+      const p6vid = p6.querySelector("video");
+      const p7vid = p7.querySelector("video");
+      const p8vid = p8.querySelector("video");
+      const p9vid = p9.querySelector("video");
+      const p10vid = p10.querySelector("video");
+      const p11vid = p11.querySelector("video");
+      const p12vid = p12.querySelector("video");
+      const p13vid = p13.querySelector("video");
+      const p14vid = p14.querySelector("video");
+      const p15vid = p15.querySelector("video");
+      const p16vid = p16.querySelector("video");
+      const p17vid = p17.querySelector("video");
+      const p18vid = p18.querySelector("video");
+      const p19vid = p19.querySelector("video");
+      const p20vid = p20.querySelector("video");
+
+      const p1btn = p1.querySelector("button");
+      const p2btn = p2.querySelector("button");
+      const p3btn = p3.querySelector("button");
+      const p4btn = p4.querySelector("button");
+      const p5btn = p5.querySelector("button");
+      const p6btn = p6.querySelector("button");
+      const p7btn = p7.querySelector("button");
+      const p8btn = p8.querySelector("button");
+      const p9btn = p9.querySelector("button");
+      const p10btn = p10.querySelector("button");
+      const p11btn = p11.querySelector("button");
+      const p12btn = p12.querySelector("button");
+      const p13btn = p13.querySelector("button");
+      const p14btn = p14.querySelector("button");
+      const p15btn = p15.querySelector("button");
+      const p16btn = p16.querySelector("button");
+      const p17btn = p17.querySelector("button");
+      const p18btn = p18.querySelector("button");
+      const p19btn = p19.querySelector("button");
+      const p20btn = p20.querySelector("button");
+
+      p1btn.addEventListener("click", function () {
+        p1.style.display = "none";
+        p2.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p2vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p2vid.play();
+      });
+
+      p2btn.addEventListener("click", function () {
+        p2.style.display = "none";
+        p3.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p3vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p3vid.play();
+      });
+
+      p3btn.addEventListener("click", function () {
+        p3.style.display = "none";
+        p4.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p4vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p4vid.play();
+      });
+
+      p4btn.addEventListener("click", function () {
+        p4.style.display = "none";
+        p5.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p5vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p5vid.play();
+      });
+
+      p5btn.addEventListener("click", function () {
+        p5.style.display = "none";
+        p6.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p6vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p6vid.play();
+      });
+
+      p6btn.addEventListener("click", function () {
+        p6.style.display = "none";
+        p7.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p7vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p7vid.play();
+      });
+
+      p7btn.addEventListener("click", function () {
+        p7.style.display = "none";
+        p8.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p8vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p8vid.play();
+      });
+
+      p8btn.addEventListener("click", function () {
+        p8.style.display = "none";
+        p9.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p9vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p9vid.play();
+      });
+
+      p9btn.addEventListener("click", function () {
+        p9.style.display = "none";
+        p10.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p10vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p10vid.play();
+      });
+
+      p10btn.addEventListener("click", function () {
+        p10.style.display = "none";
+        p11.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p11vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p11vid.play();
+      });
+
+      p11btn.addEventListener("click", function () {
+        p11.style.display = "none";
+        p12.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p12vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p12vid.play();
+      });
+
+      p12btn.addEventListener("click", function () {
+        p12.style.display = "none";
+        p13.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p13vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p13vid.play();
+      });
+
+      p13btn.addEventListener("click", function () {
+        p13.style.display = "none";
+        p14.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p14vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p14vid.play();
+      });
+
+      p14btn.addEventListener("click", function () {
+        p14.style.display = "none";
+        p15.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p15vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p15vid.play();
+      });
+
+      p15btn.addEventListener("click", function () {
+        p15.style.display = "none";
+        p16.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p16vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p16vid.play();
+      });
+
+      p16btn.addEventListener("click", function () {
+        p16.style.display = "none";
+        p17.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p17vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p17vid.play();
+      });
+
+      p17btn.addEventListener("click", function () {
+        p17.style.display = "none";
+        p18.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p18vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p18vid.play();
+      });
+
+      p18btn.addEventListener("click", function () {
+        p18.style.display = "none";
+        p19.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p19vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p19vid.play();
+      });
+
+      p19btn.addEventListener("click", function () {
+        p19.style.display = "none";
+        p20.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p20vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p20vid.play();
+      });
+
+      p20btn.addEventListener("click", function () {
+        p20.style.display = "none";
+        p1.style.display = "block";
+        document.body.classList.remove("fadeIn");
+        p1vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+        p1vid.play();
+      });
+
+      function start(el) {
+        p1vid.play();
+        el.parentNode.removeChild(el);
+        p1vid.addEventListener("ended", function () {
+          document.body.classList.add("fadeIn");
+        });
+      }
+    </script>
+  </body>
 </html>

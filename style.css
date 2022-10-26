@@ -1,0 +1,103 @@
+:root {
+	--primary-color: black;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+    font-family: Arizona;
+    src: local('https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/ABCArizonaFlare-Regular-Trial.woff'), url('https://cdn.glitch.global/5ee16365-7219-49e8-b1be-f6e0b57fde97/ABCArizonaFlare-Regular-Trial.woff') format('woff');
+}
+
+html,
+body {
+  position:fixed;
+  width:100%;
+  height:100%;
+}
+
+body {
+	font-family: 'Marcellus', serif;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+section:not(#p1) {
+  display:none;
+}
+
+section,
+video {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  object-fit:cover;
+  object-position:center center;
+}
+
+/* BUTTON */
+
+.btn {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 60px;
+        width: 70%;
+        z-index: 999;
+        color: black;
+        background: white;
+        font-size: 35px;
+        font-family: 'Arizona', serif;
+        line-height: 1;
+        border: none;
+        padding: 0px 10px 4px;
+	opacity: 0;
+  transition: opacity 100ms ease-in-out;
+}
+
+.btn2 {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 60px;
+        width: 70%;
+        z-index: 998;
+        color: white;
+        background: black;
+        font-size: 80px;
+        font-family: 'arizona', serif;
+        line-height: 1;
+        border: none;
+        padding: 0px 20px 10px;
+	opacity: 0;
+  transition: opacity 100ms ease-in-out;
+}
+
+body.fadeIn .btn {
+  opacity:1;
+}
+
+body.fadeOut .btn {
+  opacity:0;
+}
